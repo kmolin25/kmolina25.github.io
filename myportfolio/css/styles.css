@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+body { background-color:#C4C4C4; 
+	
+		font-family: 'Rock Salt', cursive; 
+	
+		font-size: 20px; 
+	
+		font-wieght: 400; 
+		
+		letter-spacing: 45%; 
+	
+		color: #788c92; 
+	
+		margin: 0; 
+	
+		padding: 0;}
+
+#page {max-width: 403 ; margin: 0 auto; position: relative; }
+
+img { 
+	max-width: 70%;
+	max-height: 70%;
+	
+}
+
+/* TEXT */
+
+h1 { margin: 0 0 1em 0; font-size: 2.5em; font-weight:400; }
+h2 { margin: 0 0 .5em 0; font-size: 1.6em; font-weight:400; line-height: 1.1em; }
+h3 { margin: 0 0 .5em 0; font-size: 1.3em; font-weight:400; }
+h4 { margin: 0 0 .5em 0; font-size: 1.3em; font-weight:400; }
+
+
+
+p{ margin: 0 0 1em 0; }
+
+a{ color: #788C92; }
+a:visited { color:#FFFFFF; }
+
+/* Header */
+
+header {height: 190px; background: #011222; position: relative; }
+
+header a.name{ 
+	z-index: 1;
+	positon: absolute; 
+	display: block; width: 160px; height: 166px;
+	background: url(../images/logo.jpg) no-repeat 0 0; background-size: contain; position: relative;
+	top: 15px; left: 20px;
+}
+header a.name span { display: none }
+
+/* Section - All */
+
+section { padding-right: 0 40px}
+
+/* Section - Main */
+
+section.graffiti { margin-top: 20px; margin-right: 30px; padding: 0; }
+section.graffiti aside { width: 33%; float: left; text-align: center; }
+
+section.graffiti content { margin: 15px; background-color: #788C92; background-size: 75px 75px; }
+
+section.Poking { margin-top: 20px; margin-right: 30px; padding: 0; }
+section.Poking aside { width: 33%; float: left; text-align: center; }
+
+section.Poking content { margin: 15px; background-color: #788C92; background-size: 75px 75px; }
+
+section.Openning { margin-top: 20px; margin-right: 30px; padding: 0; }
+section.Openning aside { width: 33%; float: left; text-align: center; }
+
+section.Openning content { margin: 15px; background-color: #788C92; background-size: 75px 75px; }
+
+section.Structure { margin-top: 20px; margin-right: 30px; padding: 0; }
+section.Structure aside { width: 33%; float: left; text-align: center; }
+
+section.Structure content { margin: 15px; background-color: #788C92; background-size: 75px 75px; }
+
+/* Footer */ 
+footer { font-size: .8em; margin: 40px; position: center; color: #C4C4C4; background-color: #011222 }
+footer .content { display: inline; }
+footer a { margin-left: 30px; color: #788c92; }
+footer a.visited { color: #777; }
+footer a.hover { color: #000000 }
+
+/*Navigaton*/
+
+nav{ background-color: #011222;	
+	position: absolute;
+	top: 0px; left: 0px;
+	padding: 40px 100px 0 0;
+	width: 100%;
+}
+
+nav::after { content: ''; display: block; clear: both; }
+
+nav ul { list-style: none; margin: 0; padding: 0; }
+
+nav ul li:hover { background-color: #011222 }
+
+nav ul li:hover > ul { display: block; }
+
+nav ul li a {  
+	display: inline-block;
+	color: #C4C4C4;
+	padding: 20px 20px;
+	text-decoration: none;
+	width: 125px;
+	position: relative;
+}
+nav ul li a:visited { color: #c4c4c4 }
+
+nav ul li a:hover { background-color:#78001D; }
+
+nav ul ul { position: absolute; top: 100%; background-color: #011222; display: none; }
+
+nav ul ul li { position: relative; }
+
+nav ul ul ul { left: 100%; top: 0px; }
+
+
+
+
+/* top-level*/
+
+nav > ul { padding-left: 200px; }
+nav > ul > li { float: left; }
+nav > ul > li > a { width: auto; padding: 10px 20px 15px 20px; }
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+/* mobile*/ 
+	body { 
+		background-color: #766565;
+		color: #C4C4C4;
+	}
+	nav { background-color: #78001D }
+	nav ul li:hover { background-color: #78001d; }
+	nav ul li a:hover { background-color: #011222; }
+	nav ul ul { background-color: #78001d; }
+	img { max-width: 100%;}
+	header { background-color:#78001D; }
+	header a.name{ positon: absolute; 
+	display: block; width: 160px; height: 66px;
+	background: url(../images/logo2.jpg) no-repeat 0 0; background-size: contain; position: relative;
+	top: 15px; left: 20px;
+	}
+	footer { background-color: #78001d; }
+
+
+
+
+	
+	
+	
+	
+	
+	

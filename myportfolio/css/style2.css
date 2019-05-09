@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+body { background-color:#C4C4C4; 
+	
+		font-family: 'Rock Salt', cursive; 
+	
+		font-size: 20px; 
+	
+		font-wieght: 400; 
+		
+		letter-spacing: 45%; 
+	
+		color: #788c92; 
+	
+		margin: 0; 
+	
+		padding: 0;}
+
+img { 
+	max-width: 70%;
+	max-height: 70%;
+}
+
+/* Header */
+
+header {height: 190px; background: #011222; position: relative; }
+
+header a.name{ 
+	z-index: 1;
+	positon: absolute; 
+	display: block; width: 160px; height: 166px;
+	background: url(../images/logo.jpg) no-repeat 0 0; background-size: contain; position: relative;
+	top: 15px; left: 20px;
+}
+header a.name span { display: none }
+
+
+nav{ background-color: #011222;	
+	position: absolute;
+	top: 0px; left: 0px;
+	padding: 40px 100px 0 0;
+	width: 100%;
+}
+
+nav::after { content: ''; display: block; clear: both; }
+
+nav ul { list-style: none; margin: 0; padding: 0; }
+
+nav ul li:hover { background-color: #011222 }
+
+nav ul li:hover > ul { display: block; }
+
+nav ul li a {  
+	display: inline-block;
+	color: #C4C4C4;
+	padding: 20px 20px;
+	text-decoration: none;
+	width: 125px;
+	position: relative;
+}
+nav ul li a:visited { color: #c4c4c4 }
+
+nav ul li a:hover { background-color:#78001D; }
+
+nav ul ul { position: absolute; top: 100%; background-color: #011222; display: none; }
+
+nav ul ul li { position: relative; }
+
+nav ul ul ul { left: 100%; top: 0px; }
+
+
+
+
+/* top-level*/
+
+nav > ul { padding-left: 200px; }
+nav > ul > li { float: left; }
+nav > ul > li > a { width: auto; padding: 10px 20px 15px 20px; }
